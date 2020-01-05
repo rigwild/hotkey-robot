@@ -1,0 +1,23 @@
+{
+  "name": "hotkey-robot",
+  "private": true,
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "start": "node dist/index.js",
+    "start:ts": "ts-node src/index.ts",
+    "dev": "nodemon --exec ts-node src/index.ts --ext ts",
+    "build": "tsc"
+  },
+  "license": "MIT",
+  "author": "rigwild <me@rigwild.dev> (https://rigwild.dev/)",
+  "dependencies": {
+    "iohook": "^0.6.2",
+    "robotjs": "^0.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^13.1.4",
+    "typescript": "^3.7.4"
+  }
+}
